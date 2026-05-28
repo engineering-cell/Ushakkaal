@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" fill="none">
+  <defs>
+    <radialGradient id="s1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(860 460) rotate(140) scale(620 520)">
+      <stop stop-color="#b89b5e" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#090909" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="s2" x1="180" y1="590" x2="1020" y2="130" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f4f0e8" stop-opacity="0"/>
+      <stop offset="0.55" stop-color="#f4f0e8" stop-opacity="0.16"/>
+      <stop offset="0.8" stop-color="#b89b5e" stop-opacity="0.40"/>
+      <stop offset="1" stop-color="#f4f0e8" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="g" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="720" fill="#090909"/>
+  <rect width="1200" height="720" fill="url(#s1)"/>
+
+  <!-- Layers -->
+  <g stroke="#f4f0e8" stroke-opacity="0.14" fill="none">
+    <path d="M220 200 H980" />
+    <path d="M180 360 H1020" />
+    <path d="M240 520 H960" />
+  </g>
+
+  <!-- Nodes -->
+  <g>
+    <circle cx="260" cy="200" r="7" fill="#f4f0e8" opacity="0.45"/>
+    <circle cx="620" cy="360" r="10" fill="#b89b5e" opacity="0.9" filter="url(#g)"/>
+    <circle cx="940" cy="520" r="7" fill="#f4f0e8" opacity="0.5"/>
+    <circle cx="980" cy="200" r="8" fill="#b89b5e" opacity="0.75"/>
+  </g>
+
+  <!-- Flow -->
+  <path d="M260 200 C 380 260, 460 300, 620 360 C 780 420, 860 470, 940 520" stroke="url(#s2)" stroke-width="2" fill="none"/>
+</svg>
+
